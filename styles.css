@@ -38,7 +38,7 @@
     }
 }
 
-/*SERVER BUTTON*/
+/* SERVER BUTTONS */
 @layer components {
     .server-button {
         width: 100%;
@@ -75,6 +75,13 @@
 
     .img-1 {
         background-image: url('./imgs/servers/hiking-lovers.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .img-2 {
+        background-image: url('./imgs/servers/gym-rats.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
