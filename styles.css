@@ -40,19 +40,15 @@
 
 /*SERVER BUTTON*/
 @layer components {
-    .server-button-img {
+    .server-button {
         width: 100%;
         aspect-ratio: 1 / 1;
         border-radius: 50%;
         transition: 100ms ease-in-out;
-        background-image: url('./imgs/servers/hiking-lovers.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
         position: relative;
     }
 
-    .server-button-img::before {
+    .server-button::before {
         content: '';
         width: 0;
         height: 0;
@@ -60,37 +56,39 @@
         display: block;
         border-radius: 20%;
         position: absolute;
-        top: 25%;
+        top: 50%;
         left: -40%;
+        transform: translateY(-50%);
         transition: 100ms ease-in-out;
+
     }
 
-    .server-button-img:hover::before {
-        width: .5rem;
-        height: 1.5rem;
-    }
-
-    .server-button-img:hover {
+    .server-button:hover {
         border-radius: 25%;
     }
 
-    .server-button-no-img {
-        width: 100%;
-        aspect-ratio: 1 / 1;
-        border-radius: 50%;
-        transition-property: border-radius;
-        transition-duration: 100ms;
-        transition-timing-function: ease-in-out;
+    .server-button:hover::before {
+        width: .5rem;
+        height: 1.5rem;
+        border-radius: 20%
+    }
+
+    .img-1 {
+        background-image: url('./imgs/servers/hiking-lovers.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .no-img {
         background-color: var(--bg-color);
         display: flex;
         align-items: center;
         justify-content: center;
-        color: var(--foreground-color);
-        position: relative;
+        color: white;
     }
 
-    .server-button-no-img:hover {
-        border-radius: 25%;
+    .no-img:hover {
         background-color: var(--accent-color);
     }
 
@@ -114,6 +112,7 @@
         border-radius: 20%;
     }
 }
+
 
 /*Reusable components*/
 @layer components {}
