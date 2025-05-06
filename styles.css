@@ -34,5 +34,13 @@
         background-color: var(--bg-color-dark);
         padding: 1rem;
     }
+
+    .server-button {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
     }
 }
