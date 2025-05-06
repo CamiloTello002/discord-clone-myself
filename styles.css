@@ -240,6 +240,10 @@
             width: .8rem;
         }
     }
+
+    .channel-category:hover {
+        color: var(--foreground-color);
+    }
 }
 
 /*Reusable components*/
