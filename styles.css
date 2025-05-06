@@ -556,6 +556,27 @@
         aspect-ratio: 1 / 1;
         border-radius: 50%;
     }
+
+    .single-message {
+        display: grid;
+        grid-template-columns: 4rem 1fr;
+        gap: 1rem;
+        padding-block: .5rem;
+        align-items: center;
+    }
+
+    .single-message-time {
+        display: block;
+        opacity: 0;
+        line-height: 0;
+        color: var(--foreground-color-dark);
+        font-size: .8rem;
+        text-align: center;
+    }
+
+    .single-message-contents {
+        color: var(--foreground-color);
+    }
 }
 
 /*Reusable components*/
