@@ -476,9 +476,24 @@
         resize: none;
         padding-block: .5rem;
         padding-inline-start: 3rem;
+        padding-inline-end: 9.5rem;
         font-size: 1rem;
         color: var(--foreground-color);
         font-family: inherit;
+    }
+
+    .input-right-buttons {
+        display: flex;
+        gap: .8rem;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        padding-inline-end: .8rem;
+
+        svg {
+            width: 1.5rem;
+        }
     }
 }
 
