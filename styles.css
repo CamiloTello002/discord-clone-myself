@@ -292,6 +292,26 @@
     .chat-toolbar {
         display: flex;
         gap: 1rem;
+        align-items: center;
+    }
+
+    .toolbar-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        color: var(--foreground-color-dark);
+
+        svg {
+            width: 1.3rem;
+        }
+    }
+
+    .toolbar-button:hover {
+        color: var(--foreground-color);
     }
 }
 
