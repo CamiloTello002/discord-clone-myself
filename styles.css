@@ -25,6 +25,10 @@
         margin: 0;
         font-family: Arial, Helvetica, sans-serif;
     }
+
+    .main {
+        display: flex;
+    }
 }
 
 /* SERVER BAR */
