@@ -118,6 +118,23 @@
         height: 1.5rem;
         border-radius: 20%;
     }
+
+    .message-count::after {
+        content: attr(data-new-messages);
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: .2rem .4rem;
+        border-radius: 50%;
+        bottom: 0;
+        right: 0;
+        color: var(--danger-foreground-color);
+        background-color: var(--danger-color);
+        font-size: .8rem;
+        font-weight: 600;
+        border: 3px solid var(--bg-color-dark);
+    }
 }
 
 
