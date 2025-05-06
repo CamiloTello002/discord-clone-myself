@@ -288,6 +288,11 @@
             width: 1.3rem;
         }
     }
+
+    .chat-toolbar {
+        display: flex;
+        gap: 1rem;
+    }
 }
 
 /*Reusable components*/
