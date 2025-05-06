@@ -23,3 +23,13 @@
         margin: 0;
     }
 }
+
+/* server bar components */
+@layer components {
+    .server-bar {
+        display: flex;
+        min-height: 100vh;
+        width: 5rem;
+        background-color: var(--bg-color-dark);
+    }
+}
