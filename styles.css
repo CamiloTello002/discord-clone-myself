@@ -40,7 +40,7 @@
 
 /*SERVER BUTTON*/
 @layer components {
-    .server-button {
+    .server-button-img {
         width: 100%;
         aspect-ratio: 1 / 1;
         border-radius: 50%;
@@ -52,15 +52,7 @@
         position: relative;
     }
 
-    .server-button-no-img {
-        width: 100%;
-        aspect-ratio: 1 / 1;
-        border-radius: 50%;
-        transition: 100ms ease-in-out;
-        background-color: var(--bg-color);
-    }
-
-    .server-button::before {
+    .server-button-img::before {
         content: '';
         width: 0;
         height: 0;
@@ -73,12 +65,55 @@
         transition: 100ms ease-in-out;
     }
 
-    .server-button:hover::before {
+    .server-button-img:hover::before {
         width: .5rem;
         height: 1.5rem;
     }
 
-    .server-button:hover {
+    .server-button-img:hover {
         border-radius: 25%;
     }
+
+    .server-button-no-img {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        border-radius: 50%;
+        transition-property: border-radius;
+        transition-duration: 100ms;
+        transition-timing-function: ease-in-out;
+        background-color: var(--bg-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--foreground-color);
+        position: relative;
+    }
+
+    .server-button-no-img:hover {
+        border-radius: 25%;
+        background-color: var(--accent-color);
+    }
+
+    .new-message::before {
+        content: '';
+        width: .5rem;
+        height: .5rem;
+        background-color: white;
+        display: block;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: -40%;
+        transform: translateY(-50%);
+        transition: 100ms ease-in-out;
+    }
+
+    .new-message:hover::before {
+        width: .5rem;
+        height: 1.5rem;
+        border-radius: 20%;
+    }
 }
+
+/*Reusable components*/
+@layer components {}
