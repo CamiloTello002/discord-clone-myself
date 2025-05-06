@@ -213,6 +213,10 @@
         background-color: var(--bg-color-light);
         color: var(--foreground-color);
     }
+
+    .inactive {
+        color: var(--foreground-color-darker);
+    }
 }
 
 /*Reusable components*/
