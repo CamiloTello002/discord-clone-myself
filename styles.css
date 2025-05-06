@@ -256,5 +256,16 @@
     }
 }
 
+/*CHAT SECTION*/
+@layer components {
+    .chat-section {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        min-height: 100vh;
+        background-color: var(--bg-color);
+    }
+}
+
 /*Reusable components*/
 @layer components {}
