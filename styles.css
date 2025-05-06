@@ -153,6 +153,24 @@
         width: var(--channel-bar-width);
         background-color: var(--bg-color-dark);
     }
+
+    .channel-name {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        height: var(--top-bar-height);
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        padding: 1rem;
+        color: var(--foreground-color);
+        font-size: 1rem;
+    }
+
+    .channel-name:hover {
+        background-color: var(--bg-color-light);
+    }
 }
 
 /*Reusable components*/
