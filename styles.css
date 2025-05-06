@@ -357,8 +357,46 @@
     }
 
     .user-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1rem .5rem;
         width: var(--user-list-width);
         background-color: var(--bg-color-dark);
+    }
+
+    .user-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .user-section-title {
+        text-transform: uppercase;
+        color: var(--foreground-color-dark);
+        font-size: .7rem;
+        font-weight: 700;
+    }
+
+    .user {
+        display: flex;
+        gap: .5rem;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: .3rem .5rem;
+        border-radius: 6px;
+        font-size: 1rem;
+        color: var(--foreground-color);
+    }
+
+    .user:hover {
+        background-color: var(--bg-color-light);
+    }
+
+    .user-avatar {
+        height: 2rem;
+        border-radius: 99999px;
     }
 }
 
