@@ -450,6 +450,18 @@
 
     .message-input-wrapper {
         height: 3rem;
+        position: relative;
+    }
+
+    .input-text-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-inline-start: .7rem;
+
+        svg {
+            width: 1.5rem;
+        }
     }
 
     .message-input {
@@ -463,6 +475,7 @@
         border: none;
         resize: none;
         padding-block: .5rem;
+        padding-inline-start: 3rem;
         font-size: 1rem;
         color: var(--foreground-color);
         font-family: inherit;
