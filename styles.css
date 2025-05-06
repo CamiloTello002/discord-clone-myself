@@ -523,10 +523,6 @@
         display: grid;
         grid-template-columns: 3rem 1fr;
         gap: 1rem;
-
-        &:hover {
-            background-color: var(--chat-hover-bg-color);
-        }
     }
 
     .first-message-contents {
@@ -581,5 +577,9 @@
 
     .single-message-contents {
         color: var(--foreground-color);
+    }
+
+    .message-hover:hover {
+        background-color: var(--chat-hover-bg-color);
     }
 }
