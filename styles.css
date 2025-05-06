@@ -267,5 +267,28 @@
     }
 }
 
+/*CHAT TOP BAR*/
+@layer components {
+    .chat-section-top-bar {
+        display: flex;
+        padding: .5rem 1rem;
+        height: var(--top-bar-height);
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .chat-channel-name {
+        display: flex;
+        gap: .5rem;
+        width: fit-content;
+        color: var(--foreground-color);
+
+        svg {
+            color: var(--foreground-color-dark);
+            width: 1.3rem;
+        }
+    }
+}
+
 /*Reusable components*/
 @layer components {}
