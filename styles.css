@@ -30,6 +30,16 @@
     .main {
         display: flex;
     }
+
+    .black-line {
+        position: fixed;
+        height: 1px;
+        width: 100%;
+        top: var(--top-bar-height);
+        left: var(--server-bar-width);
+        z-index: 100;
+        background-color: var(--bg-color-darker);
+    }
 }
 
 /* SERVER BAR */
