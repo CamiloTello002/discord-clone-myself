@@ -38,6 +38,8 @@
     }
 }
 
+/*SERVER BUTTON*/
+@layer components {
     .server-button {
         width: 100%;
         aspect-ratio: 1 / 1;
@@ -48,6 +50,14 @@
         background-position: center;
         background-repeat: no-repeat;
         position: relative;
+    }
+
+    .server-button-no-img {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        border-radius: 50%;
+        transition: 100ms ease-in-out;
+        background-color: var(--bg-color);
     }
 
     .server-button::before {
@@ -71,5 +81,4 @@
     .server-button:hover {
         border-radius: 25%;
     }
-
 }
