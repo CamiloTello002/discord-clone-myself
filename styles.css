@@ -166,6 +166,10 @@
         padding: 1rem;
         color: var(--foreground-color);
         font-size: 1rem;
+
+        svg {
+            width: 1.5rem;
+        }
     }
 
     .channel-name:hover {
