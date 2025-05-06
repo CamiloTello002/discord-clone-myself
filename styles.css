@@ -368,6 +368,7 @@
     .user-section {
         display: flex;
         flex-direction: column;
+        gap: .4rem;
     }
 
     .user-section-title {
