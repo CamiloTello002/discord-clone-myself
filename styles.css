@@ -394,6 +394,34 @@
         background-color: var(--bg-color-light);
     }
 
+    .user-online {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 1rem;
+            border-radius: 50%;
+            aspect-ratio: 1/1;
+            bottom: 0;
+            right: 0;
+            transform: translateX(25%) translateY(25%);
+            border: 3px solid var(--bg-color-dark);
+        }
+    }
+
+    .available::after {
+        background-color: var(--success-color);
+    }
+
+    .idle::after {
+        background-color: var(--warning-color);
+    }
+
+    .do-not-disturb::after {
+        background-color: var(--danger-color);
+    }
+
     .user-avatar {
         display: block;
         height: 2rem;
