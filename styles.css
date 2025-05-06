@@ -313,6 +313,33 @@
     .toolbar-button:hover {
         color: var(--foreground-color);
     }
+
+    .input-search-wrapper {
+        --search-icon-width: 1rem;
+        --search-icon-margin-end: 4px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        color: var(--foreground-color-dark);
+
+        svg {
+            width: var(--search-icon-width);
+            position: absolute;
+            right: 0;
+            margin-inline-end: var(--search-icon-margin-end);
+        }
+    }
+
+    .input-search {
+        border: none;
+        background-color: var(--bg-color-darker);
+        padding: .3rem;
+        padding-inline-end: calc(var(--search-icon-width) + var(--search-icon-margin-end) + 3px);
+        width: 9rem;
+        border-radius: .2rem;
+        outline: blue;
+        color: inherit;
+    }
 }
 
 /*Reusable components*/
