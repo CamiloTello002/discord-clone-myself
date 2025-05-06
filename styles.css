@@ -23,6 +23,7 @@
         --top-bar-height: 3rem;
         --server-bar-width: 5rem;
         --channel-bar-width: 14rem;
+        --user-list-width: 14rem;
         margin: 0;
         font-family: Arial, Helvetica, sans-serif;
     }
@@ -176,6 +177,7 @@
         padding: 1rem;
         color: var(--foreground-color);
         font-size: 1rem;
+        border-bottom: .5px solid var(--bg-color-darker);
 
         svg {
             width: 1.5rem;
@@ -272,9 +274,10 @@
     .chat-section-top-bar {
         display: flex;
         padding: .5rem 1rem;
-        height: var(--top-bar-height);
+        min-height: var(--top-bar-height);
         justify-content: space-between;
         align-items: center;
+        border-bottom: .5px solid var(--bg-color-darker);
     }
 
     .chat-channel-name {
