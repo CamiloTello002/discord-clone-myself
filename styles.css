@@ -697,4 +697,10 @@
             }
         }
     }
+
+    .active {
+        &.toolbar-button {
+            color: var(--foreground-color-light);
+        }
+    }
 }
