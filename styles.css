@@ -243,6 +243,10 @@
 
     .inactive {
         color: var(--foreground-color-darker);
+
+        &:hover svg {
+            color: var(--foreground-color-darker);
+        }
     }
 
     .channel-category {
@@ -679,6 +683,18 @@
 
         &.no-img {
             background-color: var(--accent-color);
+        }
+    }
+
+    .active {
+        &.channel {
+            color: var(--foreground-color);
+            background-color: var(--bg-color-lighter);
+            display: flex;
+
+            &.inactive svg {
+                color: var(--foreground-color-darker);
+            }
         }
     }
 }
