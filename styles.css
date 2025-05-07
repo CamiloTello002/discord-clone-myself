@@ -581,16 +581,10 @@
         color: var(--foreground-color);
     }
 
-    .message-hover:hover {
-        background-color: var(--chat-hover-bg-color);
-
-        .single-message-time {
-            opacity: 1;
-        }
-    }
 
     .message-options {
         position: absolute;
+        opacity: 0;
         top: 0;
         right: 1rem;
         transform: translateY(-50%);
@@ -613,6 +607,18 @@
 
         svg {
             width: 1.2rem;
+        }
+    }
+
+    .message-hover:hover {
+        background-color: var(--chat-hover-bg-color);
+
+        .single-message-time {
+            opacity: 1;
+        }
+
+        .message-options {
+            opacity: 1;
         }
     }
 }
