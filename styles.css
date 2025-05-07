@@ -703,4 +703,11 @@
             color: var(--foreground-color-light);
         }
     }
+
+    .active {
+        &.user {
+            background-color: var(--bg-color-lighter);
+            opacity: 1;
+        }
+    }
 }
