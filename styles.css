@@ -260,6 +260,10 @@
     .channel-category:hover {
         color: var(--foreground-color);
     }
+
+    .channel-buttons-group {
+        display: contents;
+    }
 }
 
 /*CHAT SECTION*/
