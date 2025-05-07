@@ -588,4 +588,31 @@
             opacity: 1;
         }
     }
+
+    .message-options {
+        position: absolute;
+        top: 0;
+        right: 1rem;
+        transform: translateY(-50%);
+        background-color: var(--bg-color-dark);
+        display: flex;
+        padding: 0.1rem;
+        align-items: center;
+        border: 1px solid var(--bg-color-light);
+        border-radius: .5rem;
+    }
+
+    .message-options-button {
+        background-color: transparent;
+        line-height: 0;
+        padding: .5rem;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        color: var(--foreground-color-dark);
+
+        svg {
+            width: 1.2rem;
+        }
+    }
 }
