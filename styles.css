@@ -1,4 +1,4 @@
-@layer reset, base, theme;
+@layer reset, base, theme, components, utility;
 
 @import url('./theme.css');
 
@@ -633,5 +633,11 @@
         .message-options {
             opacity: 1;
         }
+    }
+}
+
+@layer utility {
+    .hidden {
+        display: none;
     }
 }
