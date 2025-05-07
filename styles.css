@@ -340,6 +340,8 @@
         color: var(--foreground-color);
     }
 
+
+
     .input-search-wrapper {
         --search-icon-width: 1rem;
         --search-icon-margin-end: 4px;
@@ -373,6 +375,27 @@
     .input-search:focus-visible {
         outline: 4px solid var(--outline-color);
         width: 15rem
+    }
+
+    .clear-input-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        color: var(--foreground-color-dark);
+        opacity: 0;
+        pointer-events: none;
+
+        svg {
+            width: 1.3rem;
+        }
+    }
+
+    .clear-input-button:hover {
+        color: var(--foreground-color);
     }
 }
 
