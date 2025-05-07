@@ -365,10 +365,14 @@
         border-radius: .2rem;
         outline: blue;
         color: inherit;
+        transition-property: width;
+        transition-duration: 300ms;
+        transition-timing-function: ease-in-out;
     }
 
     .input-search:focus-visible {
         outline: 4px solid var(--outline-color);
+        width: 15rem
     }
 }
 
