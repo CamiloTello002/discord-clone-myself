@@ -209,6 +209,16 @@
         gap: .2rem;
     }
 
+    .channel-group.collapsed {
+        .channel-buttons-group {
+            display: none;
+        }
+
+        .channel-category svg {
+            transform: rotate(-90deg);
+        }
+    }
+
     .channel {
         display: flex;
         gap: .4rem;
