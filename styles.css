@@ -710,4 +710,11 @@
             opacity: 1;
         }
     }
+
+    .active {
+        &.message-options-button {
+            color: var(--foreground-color-light);
+            background-color: var(--bg-color-lighter);
+        }
+    }
 }
