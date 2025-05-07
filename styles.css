@@ -604,12 +604,10 @@
         border: none;
         cursor: pointer;
         color: var(--foreground-color-dark);
+        border-radius: 25%;
 
         svg {
             width: 1.2rem;
-        }
-    }
-
     .message-hover:hover {
         background-color: var(--chat-hover-bg-color);
 
