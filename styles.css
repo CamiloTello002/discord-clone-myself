@@ -518,6 +518,7 @@
     }
 
     .first-message {
+        position: relative;
         padding-inline-start: 1rem;
         padding-block: .5rem;
         display: grid;
@@ -559,6 +560,7 @@
     }
 
     .single-message {
+        position: relative;
         display: grid;
         grid-template-columns: 4rem 1fr;
         gap: 1rem;
