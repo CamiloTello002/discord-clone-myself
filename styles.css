@@ -366,6 +366,10 @@
         outline: blue;
         color: inherit;
     }
+
+    .input-search:focus-visible {
+        outline: 4px solid var(--outline-color);
+    }
 }
 
 /* USERS SIDEBAR */
