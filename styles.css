@@ -507,6 +507,10 @@
         resize: none;
     }
 
+    .message-input:focus-visible {
+        outline: 4px solid var(--outline-color);
+    }
+
     .input-right-buttons {
         display: flex;
         gap: .8rem;
